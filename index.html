@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include jsPDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Image to PDF Converter</h1>
+    <!-- File Input for Image Selection -->
+    <input type="file" id="fileInput" multiple accept="image/*">
+    <!-- Convert Button -->
+    <button class="convert-button" onclick="convertToPDF()">Convert to PDF</button>
+    <!-- Download Button -->
+    <a id="downloadLink" class="download-button" style="display:none;">Download PDF</a>
+    <!-- Progress Display -->
+    <div id="progressContainer" style="display:none;">
+      <progress id="progressBar" max="100" value="0"></progress>
+      <span id="progressPercentage">0%</span>
+    </div>
+    <!-- Conversion Success Message -->
+    <div id="successMessage" class="success-message" style="display:none;">Convert Success!</div>
+  </div>
+</div>
+
+<!-- Button to open YouTube -->
+<button class="link-button" onclick="window.open('https://www.youtube.com/', '_blank')">Go to home</button>
+  <script src="script.js"></script>
+</body>
+</html>
